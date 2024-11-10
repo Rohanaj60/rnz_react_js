@@ -1,0 +1,42 @@
+/* Banner.css */
+
+.banner_section {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1590986201364-ce95ab280ca2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your banner image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Adjust text color for contrast */
+    padding: 50px 0; /* Add some vertical padding */
+  }
+  
+  .banner_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 = 50% opacity) */
+    z-index: 1; /* Ensure overlay is behind text */
+  }
+  
+  .banner_content {
+    position: relative; /* Make sure content is above the overlay */
+    z-index: 2; /* Ensure the text is above the overlay */
+  }
+  
+  .banner_content h6 {
+    margin-bottom: 10px;
+  }
+  
+  .banner_content h1 {
+    margin: 20px 0;
+  }
+  .banner_content {
+    transition: all 0.3s ease;
+  }
+  
+  .banner_content:hover {
+    transform: translateY(-2px);
+  }
+  

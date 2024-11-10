@@ -1,0 +1,90 @@
+# Create base directories
+mkdir .\public, .\src\api\endpoints, .\src\assets\images, .\src\assets\icons, `
+.\src\components\common, .\src\components\layout, .\src\components\rentals, .\src\config, `
+.\src\features\rentals, .\src\features\auth, .\src\features\users, .\src\hooks, `
+.\src\layouts, .\src\pages, .\src\services, .\src\store\middleware, .\src\styles, .\src\utils
+
+# Create public files
+ni .\public\index.html, .\public\favicon.ico
+
+# Create src files
+ni .\src\index.js, .\src\App.js, .\src\reportWebVitals.js
+
+# Create API files
+ni .\src\api\axiosInstance.js, .\src\api\endpoints\rentalsApi.js, .\src\api\endpoints\authApi.js
+
+# Create common component files
+ni .\src\components\common\Button.js, .\src\components\common\InputField.js
+
+# Create rental feature files
+ni .\src\features\rentals\rentalSlice.js, .\src\features\rentals\rentalSelectors.js, .\src\features\rentals\rentalThunks.js
+
+# Create auth feature files
+ni .\src\features\auth\authSlice.js, .\src\features\auth\authThunks.js
+
+# Create users feature files
+ni .\src\features\users\userSlice.js
+
+# Create config files
+ni .\src\config\appConfig.js
+
+# Create hooks
+ni .\src\hooks\useAuth.js, .\src\hooks\useRental.js
+
+# Create pages
+ni .\src\pages\HomePage.js, .\src\pages\LoginPage.js, .\src\pages\RentalDetailPage.js
+
+# Create layouts
+ni .\src\layouts\MainLayout.js
+
+# Create services
+ni .\src\services\AuthService.js, .\src\services\RentalService.js
+
+# Create store files
+ni .\src\store\rootReducer.js, .\src\store\store.js
+
+# Create styles files
+ni .\src\styles\GlobalStyles.js, .\src\styles\theme.js
+
+# Create utility files
+ni .\src\utils\dateUtils.js
+
+# Create .env file
+ni .\.env
+
+# Create other config files
+ni .\.gitignore, .\package.json, .\README.md, .\jsconfig.json
+
+
+
+
+
+mkdir components\dashboard\admin
+mkdir components\dashboard\landlord
+
+# Admin dashboard components
+type NUL > components\dashboard\admin\UserList.js
+type NUL > components\dashboard\admin\Settings.js
+type NUL > components\dashboard\admin\AnalyticsDashboard.js
+type NUL > components\dashboard\admin\PropertyListAdmin.js
+type NUL > components\dashboard\admin\ReportsDashboard.js
+type NUL > components\dashboard\admin\ModerationDashboard.js
+
+# Landlord dashboard components
+type NUL > components\dashboard\landlord\MyProperties.js
+type NUL > components\dashboard\landlord\TenantList.js
+type NUL > components\dashboard\landlord\ApplicationsList.js
+type NUL > components\dashboard\landlord\PaymentsOverview.js
+type NUL > components\dashboard\landlord\PropertyPerformance.js
+type NUL > components\dashboard\landlord\LeaseAgreementList.js
+
+
+type NUL > Modal.js
+type NUL > Table.js
+type NUL > Navbar.js
+type NUL > Sidebar.js
+type NUL > Alert.js
+type NUL > Card.js
+type NUL > Chart.js
+type NUL > Loader.js
+type NUL > Pagination.js
